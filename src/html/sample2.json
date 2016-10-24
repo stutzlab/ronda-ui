@@ -1,0 +1,64 @@
+{
+"type": "FeatureCollection",
+"features": [
+{ "type": "Feature", "properties": { "GMI_ADMIN": "BRA-GOI", "FIPS_CNTRY": "BR", "CNTRY_NAME": "Brazil", "POP_RANK": 3, "ADMIN_NAME": "Goias", "STATUS": "Provincial capital", "PORT_ID": 0, "CITY_NAME": "Goiania", "POP_CLASS": "500,000 to 1,000,000" }, "geometry": { "type": "Point", "coordinates": [ -49.255001, -16.726999 ] } }
+,
+{ "type": "Feature", "properties": { "GMI_ADMIN": "BRA-RGS", "FIPS_CNTRY": "BR", "CNTRY_NAME": "Brazil", "POP_RANK": 2, "ADMIN_NAME": "Rio Grande do Sul", "STATUS": "Provincial capital", "PORT_ID": 13080, "CITY_NAME": "Porto Alegre", "POP_CLASS": "1,000,000 to 5,000,000" }, "geometry": { "type": "Point", "coordinates": [ -51.208000, -30.040001 ] } }
+,
+{ "type": "Feature", "properties": { "GMI_ADMIN": "BRA-SCT", "FIPS_CNTRY": "BR", "CNTRY_NAME": "Brazil", "POP_RANK": 5, "ADMIN_NAME": "Santa Catarina", "STATUS": "Provincial capital", "PORT_ID": 13030, "CITY_NAME": "Florianopolis", "POP_CLASS": "100,000 to 250,000" }, "geometry": { "type": "Point", "coordinates": [ -48.618999, -27.576000 ] } }
+,
+{ "type": "Feature", "properties": { "GMI_ADMIN": "BRA-PAN", "FIPS_CNTRY": "BR", "CNTRY_NAME": "Brazil", "POP_RANK": 2, "ADMIN_NAME": "Parana", "STATUS": "Provincial capital", "PORT_ID": 0, "CITY_NAME": "Curitiba", "POP_CLASS": "1,000,000 to 5,000,000" }, "geometry": { "type": "Point", "coordinates": [ -49.285000, -25.430000 ] } }
+,
+{ "type": "Feature", "properties": { "GMI_ADMIN": "BRA-SPA", "FIPS_CNTRY": "BR", "CNTRY_NAME": "Brazil", "POP_RANK": 4, "ADMIN_NAME": "Sao Paulo", "STATUS": "Other", "PORT_ID": 12970, "CITY_NAME": "Santos", "POP_CLASS": "250,000 to 500,000" }, "geometry": { "type": "Point", "coordinates": [ -46.309494, -23.954700 ] } }
+,
+{ "type": "Feature", "properties": { "GMI_ADMIN": "BRA-RDJ", "FIPS_CNTRY": "BR", "CNTRY_NAME": "Brazil", "POP_RANK": 1, "ADMIN_NAME": "Rio de Janeiro", "STATUS": "Other", "PORT_ID": 12920, "CITY_NAME": "Rio de Janeiro", "POP_CLASS": "5,000,000 and greater" }, "geometry": { "type": "Point", "coordinates": [ -43.455177, -22.721573 ] } }
+,
+{ "type": "Feature", "properties": { "GMI_ADMIN": "BRA-RDJ", "FIPS_CNTRY": "BR", "CNTRY_NAME": "Brazil", "POP_RANK": 4, "ADMIN_NAME": "Rio de Janeiro", "STATUS": "Provincial capital", "PORT_ID": 12930, "CITY_NAME": "Niteroi", "POP_CLASS": "250,000 to 500,000" }, "geometry": { "type": "Point", "coordinates": [ -42.881001, -22.839001 ] } }
+,
+{ "type": "Feature", "properties": { "GMI_ADMIN": "BRA-SPA", "FIPS_CNTRY": "BR", "CNTRY_NAME": "Brazil", "POP_RANK": 1, "ADMIN_NAME": "Sao Paulo", "STATUS": "Provincial capital", "PORT_ID": 0, "CITY_NAME": "Sao Paulo", "POP_CLASS": "5,000,000 and greater" }, "geometry": { "type": "Point", "coordinates": [ -46.623001, -23.580999 ] } }
+,
+{ "type": "Feature", "properties": { "GMI_ADMIN": "BRA-MGE", "FIPS_CNTRY": "BR", "CNTRY_NAME": "Brazil", "POP_RANK": 2, "ADMIN_NAME": "Minas Gerais", "STATUS": "Provincial capital", "PORT_ID": 0, "CITY_NAME": "Belo Horizonte", "POP_CLASS": "1,000,000 to 5,000,000" }, "geometry": { "type": "Point", "coordinates": [ -43.909000, -19.851999 ] } }
+,
+{ "type": "Feature", "properties": { "GMI_ADMIN": "BRA-ESA", "FIPS_CNTRY": "BR", "CNTRY_NAME": "Brazil", "POP_RANK": 4, "ADMIN_NAME": "Espirito Santo", "STATUS": "Provincial capital", "PORT_ID": 12850, "CITY_NAME": "Vitoria", "POP_CLASS": "250,000 to 500,000" }, "geometry": { "type": "Point", "coordinates": [ -40.414001, -20.333000 ] } }
+,
+{ "type": "Feature", "properties": { "GMI_ADMIN": "BRA-MGD", "FIPS_CNTRY": "BR", "CNTRY_NAME": "Brazil", "POP_RANK": 3, "ADMIN_NAME": "Mato Grosso do Sul", "STATUS": "Provincial capital", "PORT_ID": 0, "CITY_NAME": "Campo Grande", "POP_CLASS": "500,000 to 1,000,000" }, "geometry": { "type": "Point", "coordinates": [ -54.616001, -20.451000 ] } }
+,
+{ "type": "Feature", "properties": { "GMI_ADMIN": "BRA-MGR", "FIPS_CNTRY": "BR", "CNTRY_NAME": "Brazil", "POP_RANK": 4, "ADMIN_NAME": "Mato Grosso", "STATUS": "Provincial capital", "PORT_ID": 0, "CITY_NAME": "Cuiaba", "POP_CLASS": "250,000 to 500,000" }, "geometry": { "type": "Point", "coordinates": [ -56.092999, -15.615000 ] } }
+,
+{ "type": "Feature", "properties": { "GMI_ADMIN": "BRA-DFD", "FIPS_CNTRY": "BR", "CNTRY_NAME": "Brazil", "POP_RANK": 2, "ADMIN_NAME": "Distrito Federal", "STATUS": "National and provincial capital", "PORT_ID": 0, "CITY_NAME": "Brasilia", "POP_CLASS": "1,000,000 to 5,000,000" }, "geometry": { "type": "Point", "coordinates": [ -47.897747, -15.792109 ] } }
+,
+{ "type": "Feature", "properties": { "GMI_ADMIN": "BRA-ROR", "FIPS_CNTRY": "BR", "CNTRY_NAME": "Brazil", "POP_RANK": 7, "ADMIN_NAME": "Roraima", "STATUS": "Provincial capital", "PORT_ID": 0, "CITY_NAME": "Boa Vista", "POP_CLASS": "Less than 50,000" }, "geometry": { "type": "Point", "coordinates": [ -60.664001, 2.818000 ] } }
+,
+{ "type": "Feature", "properties": { "GMI_ADMIN": "BRA-AMA", "FIPS_CNTRY": "BR", "CNTRY_NAME": "Brazil", "POP_RANK": 5, "ADMIN_NAME": "Amapa", "STATUS": "Provincial capital", "PORT_ID": 12483, "CITY_NAME": "Macapa", "POP_CLASS": "100,000 to 250,000" }, "geometry": { "type": "Point", "coordinates": [ -51.048000, 0.036000 ] } }
+,
+{ "type": "Feature", "properties": { "GMI_ADMIN": "BRA-PAR", "FIPS_CNTRY": "BR", "CNTRY_NAME": "Brazil", "POP_RANK": 2, "ADMIN_NAME": "Para", "STATUS": "Provincial capital", "PORT_ID": 12490, "CITY_NAME": "Belem", "POP_CLASS": "1,000,000 to 5,000,000" }, "geometry": { "type": "Point", "coordinates": [ -48.498001, -1.439000 ] } }
+,
+{ "type": "Feature", "properties": { "GMI_ADMIN": "BRA-PAR", "FIPS_CNTRY": "BR", "CNTRY_NAME": "Brazil", "POP_RANK": 5, "ADMIN_NAME": "Para", "STATUS": "Other", "PORT_ID": 12510, "CITY_NAME": "Santarem", "POP_CLASS": "100,000 to 250,000" }, "geometry": { "type": "Point", "coordinates": [ -54.610001, -2.460000 ] } }
+,
+{ "type": "Feature", "properties": { "GMI_ADMIN": "BRA-MRN", "FIPS_CNTRY": "BR", "CNTRY_NAME": "Brazil", "POP_RANK": 3, "ADMIN_NAME": "Maranhao", "STATUS": "Provincial capital", "PORT_ID": 12590, "CITY_NAME": "Sao Luis", "POP_CLASS": "500,000 to 1,000,000" }, "geometry": { "type": "Point", "coordinates": [ -44.300999, -2.515000 ] } }
+,
+{ "type": "Feature", "properties": { "GMI_ADMIN": "BRA-AMZ", "FIPS_CNTRY": "BR", "CNTRY_NAME": "Brazil", "POP_RANK": 2, "ADMIN_NAME": "Amazonas", "STATUS": "Provincial capital", "PORT_ID": 12560, "CITY_NAME": "Manaus", "POP_CLASS": "1,000,000 to 5,000,000" }, "geometry": { "type": "Point", "coordinates": [ -60.014999, -3.122000 ] } }
+,
+{ "type": "Feature", "properties": { "GMI_ADMIN": "BRA-CEA", "FIPS_CNTRY": "BR", "CNTRY_NAME": "Brazil", "POP_RANK": 2, "ADMIN_NAME": "Ceara", "STATUS": "Provincial capital", "PORT_ID": 12650, "CITY_NAME": "Fortaleza", "POP_CLASS": "1,000,000 to 5,000,000" }, "geometry": { "type": "Point", "coordinates": [ -38.589001, -3.783000 ] } }
+,
+{ "type": "Feature", "properties": { "GMI_ADMIN": "BRA-PIA", "FIPS_CNTRY": "BR", "CNTRY_NAME": "Brazil", "POP_RANK": 3, "ADMIN_NAME": "Piaui", "STATUS": "Provincial capital", "PORT_ID": 0, "CITY_NAME": "Teresina", "POP_CLASS": "500,000 to 1,000,000" }, "geometry": { "type": "Point", "coordinates": [ -42.801998, -5.105000 ] } }
+,
+{ "type": "Feature", "properties": { "GMI_ADMIN": "BRA-RGN", "FIPS_CNTRY": "BR", "CNTRY_NAME": "Brazil", "POP_RANK": 3, "ADMIN_NAME": "Rio Grande do Norte", "STATUS": "Provincial capital", "PORT_ID": 12690, "CITY_NAME": "Natal", "POP_CLASS": "500,000 to 1,000,000" }, "geometry": { "type": "Point", "coordinates": [ -35.210999, -5.806000 ] } }
+,
+{ "type": "Feature", "properties": { "GMI_ADMIN": "BRA-PAA", "FIPS_CNTRY": "BR", "CNTRY_NAME": "Brazil", "POP_RANK": 4, "ADMIN_NAME": "Paraiba", "STATUS": "Provincial capital", "PORT_ID": 0, "CITY_NAME": "Joao Pessoa", "POP_CLASS": "250,000 to 500,000" }, "geometry": { "type": "Point", "coordinates": [ -34.867001, -7.130000 ] } }
+,
+{ "type": "Feature", "properties": { "GMI_ADMIN": "BRA-PRN", "FIPS_CNTRY": "BR", "CNTRY_NAME": "Brazil", "POP_RANK": 2, "ADMIN_NAME": "Pernambuco", "STATUS": "Provincial capital", "PORT_ID": 12730, "CITY_NAME": "Recife", "POP_CLASS": "1,000,000 to 5,000,000" }, "geometry": { "type": "Point", "coordinates": [ -34.915001, -8.085000 ] } }
+,
+{ "type": "Feature", "properties": { "GMI_ADMIN": "BRA-RND", "FIPS_CNTRY": "BR", "CNTRY_NAME": "Brazil", "POP_RANK": 5, "ADMIN_NAME": "Rondonia", "STATUS": "Provincial capital", "PORT_ID": 0, "CITY_NAME": "Porto Velho", "POP_CLASS": "100,000 to 250,000" }, "geometry": { "type": "Point", "coordinates": [ -63.905998, -8.762000 ] } }
+,
+{ "type": "Feature", "properties": { "GMI_ADMIN": "BRA-ALG", "FIPS_CNTRY": "BR", "CNTRY_NAME": "Brazil", "POP_RANK": 3, "ADMIN_NAME": "Alagoas", "STATUS": "Provincial capital", "PORT_ID": 12750, "CITY_NAME": "Maceio", "POP_CLASS": "500,000 to 1,000,000" }, "geometry": { "type": "Point", "coordinates": [ -35.747723, -9.676889 ] } }
+,
+{ "type": "Feature", "properties": { "GMI_ADMIN": "BRA-ACR", "FIPS_CNTRY": "BR", "CNTRY_NAME": "Brazil", "POP_RANK": 5, "ADMIN_NAME": "Acre", "STATUS": "Provincial capital", "PORT_ID": 0, "CITY_NAME": "Rio Branco", "POP_CLASS": "100,000 to 250,000" }, "geometry": { "type": "Point", "coordinates": [ -67.811996, -9.979000 ] } }
+,
+{ "type": "Feature", "properties": { "GMI_ADMIN": "BRA-TCN", "FIPS_CNTRY": "BR", "CNTRY_NAME": "Brazil", "POP_RANK": 7, "ADMIN_NAME": "Tocantins", "STATUS": "Provincial capital", "PORT_ID": 0, "CITY_NAME": "Palmas", "POP_CLASS": "Less than 50,000" }, "geometry": { "type": "Point", "coordinates": [ -48.360344, -10.212761 ] } }
+,
+{ "type": "Feature", "properties": { "GMI_ADMIN": "BRA-SRG", "FIPS_CNTRY": "BR", "CNTRY_NAME": "Brazil", "POP_RANK": 4, "ADMIN_NAME": "Sergipe", "STATUS": "Provincial capital", "PORT_ID": 12760, "CITY_NAME": "Aracaju", "POP_CLASS": "250,000 to 500,000" }, "geometry": { "type": "Point", "coordinates": [ -37.060001, -10.911000 ] } }
+,
+{ "type": "Feature", "properties": { "GMI_ADMIN": "BRA-BAH", "FIPS_CNTRY": "BR", "CNTRY_NAME": "Brazil", "POP_RANK": 2, "ADMIN_NAME": "Bahia", "STATUS": "Provincial capital", "PORT_ID": 12770, "CITY_NAME": "Salvador", "POP_CLASS": "1,000,000 to 5,000,000" }, "geometry": { "type": "Point", "coordinates": [ -38.480999, -12.993000 ] } }
+]
+}

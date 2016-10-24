@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ronda Heatmap</title>
+    <link rel="stylesheet" href="https://openlayers.org/en/v3.19.0/css/ol.css" type="text/css">
+    <script src="https://openlayers.org/en/v3.19.0/build/ol.js"></script>
+    <!-- https://github.com/brehaut/color-js/blob/master/color.js -->
+    <script src="color.js"></script>
+  </head>
+  <body>
+    <div id="map" class="map"></div>
+    <form>
+      <label>radius size</label>
+      <input id="radius" type="range" min="1" max="50" step="1" value="5"/>
+      <label>blur size</label>
+      <input id="blur" type="range" min="1" max="50" step="1" value="15"/>
+    </form>
+    <script>
+      function unitToMeters(map, unit) {
+        var view = map.getView();
+        var projection = view.getProjection();
+        var resolutionAtEquator = view.getResolution();
+        var center = map.getView().getCenter();
+        var pointResolution = projection.getPointResolution(resolutionAtEquator, center);
+        var resolutionFactor = resolutionAtEquator/pointResolution;
+        var meters = (unit / ol.proj.METERS_PER_UNIT.m) * resolutionFactor;
+        return meters;
+      }
+    </script>
+
+    <script>
+      const Color = net.brehaut.Color;
+      const rangeHue = 110;
+      const minColor = Color({hue: 0, saturation: 1, value: 0.5});
+      var maxValue = 0;
+      var minValue = 0;//9999999;
+
+      function styleFunction(feature, resolution) {
+        var value = feature.get("value");
+        console.log("value=" + value + "; min=" + minValue + "; max=" + maxValue);
+        var color = minColor.shiftHue(rangeHue*((value-minValue)/(maxValue-minValue)));
+        // console.log(">>>>> " + color);
+        var styles = [
+          new ol.style.Style({
+            fill: new ol.style.Fill({color: color.toString()}),
+            stroke: new ol.style.Stroke({color: 'black', width: 0})
+          })
+        ];
+        return styles;
+      }
+
+      var xhr = new XMLHttpRequest();
+
+      xhr.onreadystatechange = function() {
+        if (xhr.readyState === XMLHttpRequest.DONE) {
+          if (xhr.status === 200) {
+            console.log("Got presence features successfully");
+            maxValue = 0;
+
+            //get presence data and convert into features
+            var source = new ol.source.Vector({
+            });
+
+            var presenceAreas = JSON.parse(xhr.responseText);
+            for(var e=0; e<presenceAreas.features.length; e++) {
+              var presence = presenceAreas.features[e];
+              var feature = new ol.Feature({
+                geometry: new ol.geom.Circle(presence.geometry.coordinates, 0.00022*(presence.properties.radius/50))
+              });
+              var value = presence.properties.qttyPass;
+              // var value = presence.properties.samplesCount;
+              // var value = presence.properties.passVariation;
+              // var value = presence.properties.totalTime;
+
+              feature.set("value", value);
+              if(maxValue<value) {
+                maxValue = value;
+              }
+              if(minValue>value) {
+                minValue = value;
+              }
+              source.addFeature(feature);
+            }
+
+            var presenceLayer = new ol.layer.Vector({
+              source: source,
+              style: styleFunction,
+              opacity: 0.5
+            });
+
+            // Create a tile layer from OSM
+            var osmLayer = new ol.layer.Tile({
+                source: new ol.source.OSM()
+            });
+
+            // Create the map with the previous layers
+            var map = new ol.Map({
+                target: 'map',  // The DOM element that will contains the map
+                renderer: 'canvas', // Force the renderer to be used
+                layers: [osmLayer, presenceLayer],
+                // Create a view centered on the specified location and zoom level
+                view: new ol.View({
+                    center: [-47.824545, -15.994241666666667],
+                    zoom: 16,
+                    projection: "EPSG:4326"
+                })
+            });
+
+          } else {
+            console.log("Couldn't get presence features");
+          }
+        }
+      };
+      xhr.open("GET", "http://192.168.99.100:7000/v1/flaviostutz", true);
+      xhr.send(null);
+
+    </script>
+  </body>
+</html>

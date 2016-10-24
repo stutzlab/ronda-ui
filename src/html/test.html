@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ronda Heatmap</title>
+    <link rel="stylesheet" href="https://openlayers.org/en/v3.19.0/css/ol.css" type="text/css">
+    <script src="https://openlayers.org/en/v3.19.0/build/ol.js"></script>
+  </head>
+  <body>
+    <div id="map" class="map"></div>
+    <form>
+      <label>radius size</label>
+      <input id="radius" type="range" min="1" max="50" step="1" value="5"/>
+      <label>blur size</label>
+      <input id="blur" type="range" min="1" max="50" step="1" value="15"/>
+    </form>
+    <script>
+      function styleFunction(feature, resolution) {
+        var red = feature.get("value");
+        console.log(">>>>> " + red);
+        var styles = [
+          new ol.style.Style({
+            fill: new ol.style.Fill({color: '#' + red + '6666'}),
+            stroke: new ol.style.Stroke({color: 'black', width: 1})
+          })
+        ];
+        return styles;
+      }
+
+      var source = new ol.source.Vector({
+      });
+
+      var feature = new ol.Feature({
+        geometry: new ol.geom.Circle([-47.824545,-15.994243], 0.0005)
+      });
+      feature.set("value", 40);
+      source.addFeature(feature);
+
+      var feature2 = new ol.Feature({
+        geometry: new ol.geom.Circle([-47.825245,-15.994243], 0.0005)
+      });
+      feature2.set("value", 99);
+      source.addFeature(feature2);
+
+      var presenceLayer = new ol.layer.Vector({
+        source: source,
+        style: styleFunction,
+        opacity: 0.5
+      });
+
+      // Create a tile layer from OSM
+      var osmLayer = new ol.layer.Tile({
+          source: new ol.source.OSM()
+      });
+
+      // Create the map with the previous layers
+      var map = new ol.Map({
+          target: 'map',  // The DOM element that will contains the map
+          renderer: 'canvas', // Force the renderer to be used
+          layers: [osmLayer, presenceLayer],
+          // Create a view centered on the specified location and zoom level
+          view: new ol.View({
+              center: [-47.824545, -15.994241666666667],
+              zoom: 16,
+              projection: "EPSG:4326"
+          })
+      });
+    </script>
+  </body>
+</html>

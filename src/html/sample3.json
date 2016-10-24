@@ -1,0 +1,45 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -47.824545,
+          -15.994241666667
+        ]
+      },
+      "properties": {
+        "time": "2016-10-12T22:32:55Z",
+        "passVariation": null,
+        "passes": "\"[{\"startTime\":\"2016-10-12T22:32:55.000Z\",\"trackers\":[{\"trackerId\":\"homie1\",\"time\":\"2016-10-12T22:32:55.000Z\"}],\"endTime\":\"2016-10-12T22:37:11.000Z\"}]\"",
+        "qttyPass": 1,
+        "radius": 50,
+        "samplesCount": 1,
+        "totalTime": 256000
+      },
+      "test": 0.4
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -47.820943333333,
+          -15.995168333333
+        ]
+      },
+      "properties": {
+        "time": "2016-10-12T22:32:55Z",
+        "passVariation": null,
+        "passes": "\"[{\"startTime\":\"2016-10-12T22:32:55.000Z\",\"trackers\":[{\"trackerId\":\"homie1\",\"time\":\"2016-10-12T22:32:55.000Z\"}],\"endTime\":\"2016-10-12T22:37:11.000Z\"}]\"",
+        "qttyPass": 1,
+        "radius": 50,
+        "samplesCount": 0.4,
+        "totalTime": 256000
+      },
+      "test": 1
+    }
+  ]
+}
